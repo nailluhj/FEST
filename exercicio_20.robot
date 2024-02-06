@@ -1,4 +1,4 @@
-#Calcule imc e peso conforme tabela abaixo: 
+#Calcule o IMC conforme tabela e fórmula abaixo:
 
 
 *** Settings ***
@@ -9,7 +9,7 @@ ${ALTURA}    1.85
 
 *** Test Cases ***
 Exercicio 20
-    ${resultadoAltura}    Evaluate    ${ALTURA} * ${PESO}
+    ${resultadoAltura}    Evaluate    ${ALTURA} * ${ALTURA}
     ${imc}    Evaluate    ${PESO} / ${resultadoAltura}
 
     Log To Console    Seu IMC: ${imc}
